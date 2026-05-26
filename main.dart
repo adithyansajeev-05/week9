@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 
 import 'views/home_page.dart';
 
@@ -23,4 +24,27 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
     );
   }
+=======
+import 'network_services.dart';
+
+void main() {
+
+  NetworkService().fetchTasks();
+
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.black,
+        appBar: AppBar(
+          backgroundColor: Colors.blue.shade900,
+          title: Text("HTTP Example",style: TextStyle(color:Colors.white),),
+        ),
+
+        body: Center(
+          child: Text("Check Console",style: TextStyle(color: Colors.white)),
+        ),
+      ),
+    ),
+  );
+>>>>>>> f374a57 (added files)
 }
